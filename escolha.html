@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Preencha e Envie Aqui</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seleção de Redirecionamento</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      max-width: 480px;
+      width: 100%;
     }
     h1 {
-      font-size: 36px;
-      margin-bottom: 40px;
+      text-align: center;
+      color: #064a6e;
+      margin-bottom: 24px;
+      font-weight: 700;
     }
-    .folder {
-      margin: 20px 0;
+    label {
+      font-weight: 600;
+      margin-top: 15px;
+      display: block;
+      color: #333;
     }
-    .folder a {
-      display: inline-block;
-      padding: 15px 25px;
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1.8px solid #ccc;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+    select:focus {
+      outline: none;
+      border-color: #069cc2;
+    }
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 14px;
       font-size: 18px;
-      border-radius: 5px;
+      background-color: #069cc2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
     }
-    .folder a:hover {
-      background-color: #45a049;
+    button:hover {
+      background-color: #037a99;
     }
   </style>
 </head>
